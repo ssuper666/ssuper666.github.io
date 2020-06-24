@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" type="image/png" href="images/icon.png"/>
+	<base target="_self">
+	<title>图书详情页</title>
+</head>
+<body class="container">
+	<!-- 导航栏 -->
+	<div class="navbar-wrapper">
+		<nav class="navbar navbar-default navbar-static-top">
+			<!-- 导航标题和缩小按钮 -->
+			<div class="navbar-header">
+				<button data-target="#navbarCollapse" type="button" class="navbar-toggle" data-toggle="collapse">
+					<span class="sr-only">Toggle navigation</span><!-- UNknown -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- 导航栏正文 -->
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li><a href="jieguo.html">
+						<span class="glyphicon glyphicon-bookmark"></span>&nbsp;每日推荐
+						</a>
+					</li>
+					<li>
+						<a href="jieguo.html">
+							<span class="glyphicon glyphicon-pencil"></span>&nbsp;人气作家
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="jieguo.html">
+							<span class="glyphicon glyphicon-fire"></span>&nbsp;畅销作品
+						</a>
+					</li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right" style="margin-right: 0px"> 
+					<li>
+						<a href="denglu.html">
+							<span class="glyphicon glyphicon-log-in"></span>&nbsp;登陆
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<!-- 搜索栏 -->
+	<div class="row bot ss">
+		<div class="col-sm-3">
+			<a href="index.html">
+				<img class="img-responsive" src="images/logo.png" title="易品书网">
+			</a>	
+		</div>
+		<div class="col-sm-5">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="请输入关键字">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-info">搜索图书</button>
+				</span>
+			</div><!-- input-group -->
+			<div class="col-sm-8" id="recom">
+				<ul class="list-inline">
+					<li><a href="xiangqing.html"><small>雷军自传</small></a></li>
+					<li><a href="xiangqing.html"><small>韩寒全集</small></a></li>
+					<li><a href="xiangqing.html"><small>龙族</small></a></li>
+				</ul>
+			</div>
+		</div><!-- col-sm-6 -->
+	</div><!-- row -->
+	
+	<!-- 图书 -->
+		<div class="row">
+			<div class="col-sm-9 botBorder">
+				<!-- book图片 -->
+				<div class="col-sm-4">
+					<div class="row">
+						<img id="bookImg" class="img-responsive img-rounded" src="images/detail/book.jpg" title="book1">
+					</div>
+					<div class="list-inline text-center" id="bookImgList">
+						<li>
+							<a href="" class="greyFont" title="收藏"><span class="glyphicon glyphicon-heart-empty"></span></a>
+						</li>
+						<li>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="" class="greyFont" title="下载"><span class="glyphicon glyphicon-download-alt"></span></a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+						</li>
+						<li>
+							<a href="" class="greyFont" title="分享"><span class="glyphicon glyphicon-share-alt"></span></a>	
+						</li>
+					</div>
+				</div>
+
+				<!-- book信息 -->
+				<div class="col-sm-8 ">
+					<!-- title -->
+					<h2>何以笙箫默</h2>
+					<!-- 书本标签 -->
+					<div class="bookLabel">
+						<ul class="list-inline">
+							<li><span class="label label-success">言情</span></li>
+							<li><span class="label label-default">小说</span></li>
+							<li><span class="label label-default">爱情</span></li>
+							<li><span class="label label-default">温暖</span></li>
+							<li><span class="label label-default">青春</span></li>
+						</ul>
+					</div>
+
+					<!-- 引用 -->
+					<div>
+						<blockquote><!--<blockquote> 标签定义块引用。-->
+							<h5>2015热播剧原著小说</h5>
+							<footer>顾漫</footer>
+						</blockquote>
+						<p><span class="glyphicon glyphicon-eye-open"></span>&nbsp;<strong>1200</strong>人在读</p>
+					</div>
+
+					<!-- 本书概要 -->
+					<div class="well">
+						<p>
+							<strong>本书概要：</strong>
+							2015热播剧原著小说，男神钟汉良、九头身美女唐嫣主演！一段爱情何以笙箫皆沉默。一次告别何以爱情皆你我。我不愿将就。何以琛，约吗？
+						</p>
+					</div>
+					<div>
+						<!-- 价格 -->
+						<p>
+							<span class="greyFont">价格:</span>&nbsp;<span class="priceFont">￥14.50</span>
+						</p>
+					</div>
+					<!-- 购买按钮 -->
+					<div >
+						<button class="btn btn-lg btn-success" type="button" onclick="location='user.html'">立即购买</button>
+						&nbsp;&nbsp;&nbsp;<!--利用空格将立即购买与我的书架两按钮隔开到舒适距离。-->
+						<button class="btn btn-lg btn-default" type="button" onclick="location='user.html'">我的书架</button>
+						<p class="text-right"><a href="javascript:alert('请联系管理员')" class="greyFont">遇到问题？</a></p>
+					</div>
+				</div><!-- col-sm-8 -->
+
+				<!-- 推荐、详情、留言 -->
+				<div class="col-sm-12">
+					<div class="panel panel-default"><!--Bootstrap 面板（Panels）。创建一个基本的面板，只需要向 <div> 元素添加 class .panel 和 class .panel-default 即可。-->
+						<div class="panel-heading">简介</div>
+						<div class="panel-body">
+							<h4>图书简介</h4>
+							<p> 
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								我还记得与他们初遇在人群熙攘的超市，就像在后记里写的那样，忽然就冒出那样一种感触攫住了我。也许早一步，晚一步，他们不是他们，我不是我，谁知道呢，缘分总是那么玄之又玄。我还记得那是大三的暑假，我在我的老台式机上，一遍遍的写着他们的重逢，写了十几遍，终于我满意了，他们也满意了。我还记得我在学校的机房排队，等不及了，就拿出白纸先把情节记下来，生怕灵感转瞬即逝。我还记得上课的时候他们也不安分，不断地在我脑袋里自行演绎着，让我不得不当个不专心的学生，一遍遍在笔记本上写着他们的名字，才能得到抒发后的平静。一时间有些恍然。好像是眨眼间，却已经很远了。时间真是世间最残酷又最美好的东西。从写这篇文开始，到现在，已经过去了七年，已经和以琛和默笙分开的时间一样漫长了。嗨，以琛默笙，又见面了。
+							</p>
+							<h4>编辑推荐</h4>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								顾漫的《何以笙箫默》征服了千万粉丝，见证了她们的青春成长，成就了无数少女的校园王子梦。这个冬季，蓦然回首，与之再次相遇，《何以》以更加温馨的面貌出现。
+							</p>
+							<h4>作者简介</h4>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								  顾漫<br/>
+								  她说，这世上必有一个人，会和她不离不弃宠辱与共，如果现在还没有，那是她没有找到，不够幸运，而不是他不存在……<br/>
+								  她说，她喜欢晒太阳，喜欢到处乱爬，喜欢悠闲度日，喜欢一切让人温暖感动的东西……<br/>
+								  她说，她的愿望很伟大，要天下太平……
+							</p>
+						</div>
+					</div>
+				</div><!-- row -->
+
+				<!-- 留言系统 -->
+				<div class="col-sm-12">
+					<div class="botBorder ">
+						<h4>图书评论</h4>
+					</div>
+					<br>
+					<div class="col-sm-12">
+						<p>共有132条评论</p>
+					</div>
+					<div class="row botBorder comment">
+						<div class="col-sm-1 col-xs-2">
+							<img class="commentImg img-responsive" src="images/detail/t2.jpg" title="头像">
+						</div>
+						<div class="col-sm-10">
+							<p><small>迎春花的秋天</small>&nbsp;&nbsp;<small class="greyFont">2019-12-01</small></p>
+							<p>前一世，默笙和以琛相欠，默笙欠以琛一个完整的童年，以琛欠默笙一脉温情；
+这一世，默笙和以琛相恋，默笙恋以琛聪明英俊有才华，以琛恋默笙明媚如阳；
+下一世，默笙和以琛相忘，默笙忘以琛深情期待整七年，以琛忘默笙转眼不见。
+
+这一世，他们遇见，分离，再遇见，兜兜转转七年。七年间，这一份真情的缘牵绊着他们，妄图相忘徒劳无功，因为前世欠债未还。
+
+于是，于以琛，姹紫嫣红敌不过她的嫣然一笑；
+于是，于默笙，才俊富豪敌不过他的浅浅一吻。
+于是，以琛和默笙这四个千差万别的字，穿越了七年，穿越了两世，铭刻在一张红色的结婚证上，铭刻在两个人的心上。
+
+我以为，这一切都是姻缘的安排。
+优秀俊朗如以琛也要栽在有点迷糊称不上绝色的默笙手上。什么默笙的赖皮，什么默笙的死缠烂打，也终究是借口，如此可爱并为之疯狂的借口，想起来不禁失笑的一抹弧线。他，何以琛便是执着的爱着这样的赵默笙，不在乎她是谁，她从哪里来，只要她够赵默笙。
+如此情深，却难以启齿。
+以琛如此深刻的爱着默笙，爱进了骨髓里，却不曾甜言蜜语，却不曾日日表白真心，原来你若真爱一个人，内心酸涩，反而会说不出话来，甜言蜜语，多数说给不相干的人听。日日表白，是在安慰对方，还是在提醒自己不可忘记？
+
+大多的情感指南，爱情专家告诉我们，与昔日恋人最好擦肩而过，互相道句“你好！”，眼角眉梢要带着回忆的信号，保存最美好的记忆。然而他们却不，他们事隔七年，复见，逃跑,陌生倔强的不承认；再见，纠缠，倔强的不诉说每当梦醒都是想念的泪水；三见，急切，倔强的领一份毫无温情准备的结婚证，也许是七年里日日都憧憬的场面。情感指南，爱情专家也有不靠谱的时候，那就是遇见真爱的时候。我以为，当我们遇见某一个三世姻缘的人，我们的会情不自禁，我们会激发我们爱的潜能，在真心面前，一切技巧还有你来我往拔河的力学均是那么可笑。
+
+我能想到，最浪漫的承诺：执子之手，与子偕老。不是山崩地裂，天雷勾地火，而是天冷加件衣，饥饿做顿饭，彼此如空气般的存在，温暖围绕，一回头他永远在那里等着你。他们便是如此，平淡的叙事，安静的语调，幸福简单的生活。人世间，有太多的浮华，有太多的功利，只有在他的怀里才能看见纯净的天空。
+
+以琛说：“你以后会明白，如果世界上曾经有那个人出现过，其他人都会变成将就。我不愿意将就。”三世姻缘，怎可将就？
+
+若，此时的你，正享受爱情，尽可珍惜，姻缘可遇不可求；
+若，此时的你，正寻觅爱情，尽可相信，前世欠你人终会出现，因为出来混，总是要还的。
+</p>
+							<p class="text-right">
+								<a class="greyFont" href="user.html">回复</a>&nbsp;&nbsp;
+								<a class="greyFont" href="javascript:alert('点赞成功')"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+								<span>6447</span>
+							</p>
+						</div>
+					</div>
+					<div class="row botBorder comment">
+						<div class=" col-sm-1 col-xs-2">
+							<img class="commentImg img-responsive" src="images/detail/t3.jpg" title="头像">
+						</div>
+						<div class="col-sm-10">
+							<p><small>桂香酒洌迷人醉</small>&nbsp;&nbsp;<small class="greyFont">2019-10-11</small></p>
+							<p>你要知道，即使有一天我们成了陌路，我仍会在心里轻声喊着你的名字；你要知道，喜欢你并不从某个时候开始，因为我早已把它当作生命的一部分；你更要知道，我的等待不是执着，而是习惯，如果有一天我不再习惯喊你、喜欢你、等待你，那必然是我闭上眼睛，停止呼吸的时刻。
+
+我喜欢顾漫的《何以笙萧默》，我甚至记得小说里的每个细节，记得何以琛说的每一句话，不是我记性好，而是他的话实在太少；虽然少，每字每句却像水滴扣击岩石，一点点融化心里最坚固的角落，让我们多年筑起的故作轻松和强颜欢笑彻底崩塌。如果有这样一个男人站在你的面前，外表冷漠却渴望温暖，拥抱你像拥抱最珍贵的宝物，受尽你留下的孤独却仍然无法对你放手，他因为你一个微笑腾云驾雾，也因为你一句话坠入地狱，你就是他的全部幸福全部快乐，你怎么忍心再次推开他，你怎么还能坚持单身的自由而不奋不顾身得投入被誉为“枷锁”的婚姻。即便是枷锁，因为有他，你也愿意一辈子不解开。
+
+我早已过了看纯情小说的年纪了，我也早已对爱情不再梦幻不再奢求，曾经渴望一段轰轰烈烈的爱情如今只剩下对婚姻平静的向往，我不是不相信于千万人之中、于时间无穷荒野之间遇见他的可能，只是我可能已经不起遇见前那段漫长的等待，并不是所有人都像赵默笙一样幸运的，纵然我愿意等，能等来像何以琛那样的男人吗？垂手、泪眼、无语凝咽，无人愿意孤独，只因这个世界上那个人始终未曾出现过。
+
+有些伤口会随时间慢慢愈合，有些伤口会在时间中慢慢溃烂，有些等待会变成习惯，有些记忆会相伴一生。有一天若我找到了不再将就的理由，请让笙萧静默，请允许我尘埃落定。</p>
+							<p class="text-right">
+								<a class="greyFont" href="user.html">回复</a>&nbsp;&nbsp;
+								<a class="greyFont" href="javascript:alert('点赞成功')"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+								<span>3450</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 写评论 -->
+					<div class="row" style="margin: 50px 0 30px 0;">
+						<div class=" col-sm-1 hidden-xs">
+							<img class="commentImg img-responsive" src="images/t1.jpg" title="头像">
+						</div>
+
+						<div class="col-sm-10">
+							<form action="" class="form form-horizontal">
+								<div class="form-group">
+									<label for="cTitle" class="control-label col-sm-2">标题</label><!--<label> 标签为 input 元素定义标注（标记）。
+label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。-->
+									<div class="col-sm-10">
+										<input class="form-control" name="cTitle" type="text" id="cTitle" placeholder="选填"><!--<input> 标签用于搜集用户输入的信息。-->
+									</div>
+									
+								</div>
+								<div class="form-group">
+									<label for="cContent" class="control-label col-sm-2">内容</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" name="cContent" id="cContent" rows="4" placeholder="必填，不少于五个字"></textarea><!--<textarea> 标签定义多行的文本输入控件。
+
+文本区中可容纳无限数量的文本，其中的文本的默认字体是等宽字体（通常是 Courier）。
+
+可以通过 cols 和 rows 属性来规定 textarea 的尺寸。-->
+									</div>
+								</div>
+								<!-- 验证码 -->
+								<div class="form-group">
+									<label for="cTest" class="control-label col-sm-2">验证码</label>
+									<div class="col-sm-2">
+										<input class="form-control" name="cTest" type="text" id="cTest">
+									</div>
+									<div class="col-sm-3"></div>
+									
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2">
+										<button type="button" class="btn btn-info">发表评论</button>
+									</div>
+								</div>
+							</form>	
+						</div>
+					</div>
+				</div><!-- row -->
+			</div><!-- col-sm-9 -->
+
+
+			<!-- 右侧功能栏目 -->
+			<div class="col-sm-3 ">
+				<div class="allBorder listPand ">
+					<h4>相关图书</h4>
+					<div class="media">
+						<a class="media-left" href="xiangqing.html">
+							<img class="" src="images/detail/r1.jpg" alt="...">
+						</a>
+						<div class="media-body">
+							<h5>《朝秦暮楚》</h5>
+							<p class="greyFont">夏桐</p>
+							
+						</div>
+					</div>
+					<div class="media">
+						<a class="media-left" href="xiangqing.html">
+							<img class="" src="images/detail/r2.jpg" alt="...">
+						</a>
+						<div class="media-body">
+							<h5>《有一种爱情叫学霸》</h5>
+							<p class="greyFont">阿Q</p>
+							
+						</div>
+					</div>
+				</div>	<!-- allBorder -->	
+			</div>	<!-- col-sm-3 -->
+		</div><!-- row -->	
+
+
+
+
+	<footer class="navbar-static-buttom text-center">
+		<div class="row">
+			<ul class="list-inline">
+				<li></li>
+			</ul>
+		</div>
+	</footer>
+
+
+
+
+<script src="css/bootstrap/js/jquery-3.0.0.min.js"></script>
+<script src="css/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
